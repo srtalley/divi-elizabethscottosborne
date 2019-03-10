@@ -1,0 +1,43 @@
+@media (min-width: 981px){
+    .logo_container a:before {
+        content: " ";
+        position: absolute;
+        width: 194px;
+        height: 43px;
+        background-repeat: no-repeat;
+        top: 21px;
+        left: -4px;
+        z-index: 1;
+        background-size: contain;
+    }
+
+    #logo {
+        opacity:1;
+        display:inherit;
+        margin: 0 0 0 0;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        }
+    .logo_container a:before {
+        opacity:0;
+        margin: 0 0 -200px -130px;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    .et-fixed-header #logo {
+        opacity: 0;
+        margin: -200px 0px 0 0px;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    .et-fixed-header .logo_container a:before  {
+        opacity:1;
+        margin: 0 0 0 8px !important;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+}

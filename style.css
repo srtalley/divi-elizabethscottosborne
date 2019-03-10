@@ -1,0 +1,141 @@
+/*
+Theme Name: E Scott Osborne - Divi Child Theme
+Template: Divi
+Author: KCD LLC
+Version: 1.0.8
+Updated: 2019-02-25
+*/
+
+/* Collapsible Submenus on Mobile */
+#main-header .et_mobile_menu .menu-item-has-children > a { background-color: transparent; position: relative; }
+#main-header .et_mobile_menu .menu-item-has-children > a:after { font-family: 'ETmodules'; text-align: center; speak: none; font-weight: normal; font-variant: normal; text-transform: none; -webkit-font-smoothing: antialiased; position: absolute; }
+#main-header .et_mobile_menu .menu-item-has-children > a:after { font-size: 16px; content: '\4c'; top: 13px; right: 10px; }
+#main-header .et_mobile_menu .menu-item-has-children.visible > a:after { content: '\4d'; }
+#main-header .et_mobile_menu ul.sub-menu { display: none !important; visibility: hidden !important;  transition: all 1.5s ease-in-out;}
+#main-header .et_mobile_menu .visible > ul.sub-menu { display: block !important; visibility: visible !important; }
+
+#et-top-navigation {
+    font-weight: 500;
+}
+.about-blurb img.alignleft {
+    margin-top: 10px;
+}
+.featured-blog article.et_pb_post,
+.blog-two-column article.et_pb_post {
+    display: flex;
+    flex-flow: column wrap;
+	justify-content: space-between;
+}
+.featured-blog article.et_pb_post .entry-title {
+    padding-bottom: 20px;
+}
+.featured-blog article.et_pb_post .post-meta {
+    margin: 15px 0 0;
+    border-top: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+    order: 5;
+}
+.featured-blog article.et_pb_post .post-content :last-child {
+    margin-bottom: 0;
+}
+.blog-two-column .et_pb_ajax_pagination_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.blog-two-column article.et_pb_post:nth-child(odd) {
+    margin-right: 3%;
+}
+.blog-two-column article.et_pb_post {
+    width: 47%
+}
+.blog-two-column article.et_pb_post .entry-title {
+    padding-bottom: 20px;
+	min-height: 70px;
+}
+.blog-two-column article.et_pb_post .post-meta {
+    margin: 20px 0 0;
+    border-top: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+    order: 5;
+    padding: 5px;
+}
+.blog-two-column.et_pb_posts a.more-link {
+    font-family: 'Quicksand',Helvetica,Arial,Lucida,sans-serif;
+    margin-top: auto;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+}
+.blog-two-column.et_pb_posts .post-content { 
+	position: relative; 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.blog-two-column.et_pb_posts .post-content p {
+    flex-grow: 1;
+	margin-bottom: 20px;
+}
+.blog-two-column.et_pb_posts a.more-link:before, .blog-two-column.et_pb_posts a.more-link:after {
+    border-color: #cc2626;
+}
+.blog-two-column.et_pb_posts a.more-link:before {
+    left: auto !important;
+    right: 70%;
+}
+.blog-two-column.et_pb_posts a.more-link:before, .blog-two-column.et_pb_posts a.more-link:after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 0;
+    top: 50%;
+    left: 70%;
+    margin: 0 10px;
+    margin-top: -1px;
+    border-top: 1px solid #55678b;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+.blog-two-column.et_pb_posts a.more-link:hover:before {
+    right: 50%;
+    margin-right: -10px;
+    width: 90px;
+}
+.blog-two-column.et_pb_posts a.more-link:hover:after {
+    left: 50%;
+    margin-left: -10px;
+    width: 90px;
+}
+
+div#categories-3 ul {
+    column-count:2;
+}
+
+div#categories-3 {
+    font-size: 14px;
+    line-height:18px;
+}
+
+.et_pb_module .et_pb_widget {
+	margin-bottom: 30px !important; 
+}
+
+div#categories-3 ul,
+.et_pb_widget.widget_nav_menu ul {
+	padding-left: 5px !important;
+}
+.et_pb_widget.widget_nav_menu ul li {
+	font-size: 16px;
+    line-height:20px;
+}
+h4.widgettitle {
+    font-size: 24px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
